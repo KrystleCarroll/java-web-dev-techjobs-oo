@@ -8,6 +8,20 @@ public class Job {
     private static int nextId = 1;
 
     private String name;
+
+    @Override
+    public String toString() {
+//        return "\n*";
+        return  "\n" +
+                "ID: " + id +
+                "\nName: " + name +
+                "\nEmployer: " + employer +
+                "\nLocation: " + location +
+                "\nPosition Type: " + positionType  +
+                "\nCore Competency: " + coreCompetency ;
+
+    }
+
     private Employer employer;
     private Location location;
     private PositionType positionType;
